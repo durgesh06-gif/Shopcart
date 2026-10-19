@@ -5,6 +5,8 @@ import Product from './components/Product';
 import Recipes from './components/Recipes';
 import State from './components/State';
 import routes from './routes';
+import Login from './components/Login';
+import { LoginContext, LoginProvider } from './Logincontext';
 
 function App() {
     return(
@@ -14,9 +16,9 @@ function App() {
 {/* <Counter/> */}
 {/* <State/> */}
 {/* <Recipes/> */}
-
+<LoginProvider>
     <RouterProvider router={routes} />
-
+</LoginProvider>
 </>
 );
 }

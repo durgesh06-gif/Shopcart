@@ -7,6 +7,7 @@ function Catger({id,name,cart}) {
         <p>id: {id}</p>
         <p>name: {name}</p>
         <p>cart: {cart}</p>
+
     </div>
   )
 }

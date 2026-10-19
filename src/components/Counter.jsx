@@ -10,6 +10,10 @@ function Counter() {
 const [count,setCount]=useState(0)
 const [count1,setCount1]=useState(0)
 
+if(count==1)
+{
+  throw new Error('count not found')
+}
 useEffect(()=>{
   console.log('useeffect hook');
   

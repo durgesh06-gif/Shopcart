@@ -10,6 +10,11 @@ import Reducer from "./components/Reducer";
 import Productabmin from "./components/Productadm";
 import Propex from "./components/Propex";
 import A from "./components/A";
+import M from "./components/M";
+import Productdetail from "./components/Productdetail";
+import ErrorPage from "./components/Errorpage";
+import Counter from "./components/Counter";
+import Refexp from "./components/Refexp";
 
 const routes=createBrowserRouter([
    {
@@ -54,6 +59,27 @@ element:<Cart/>
 {
     path:'acom',
     element:<A/>
+},
+{
+    path:'opti',
+    element:<M/>
+},
+{
+    path:'pro/de/:id',
+    element:<Productdetail/>
+},
+{
+    path:'count',
+    // errorElement:<ErrorPage/>,
+    element:<Counter/>
+},
+{
+    path:'ref',
+    element:<Refexp/>
+},
+{
+    path:'*',
+    element:<ErrorPage/>
 }
 ]
    }

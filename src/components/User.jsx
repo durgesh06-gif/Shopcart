@@ -1,6 +1,5 @@
 import React from 'react'
 
-// Wrap parameters in curly braces to destructure props
 function User({ fname, lname, email }) {
   return (
     <div>
